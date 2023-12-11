@@ -1,12 +1,12 @@
 import express from "express";
-import { getArticlessController, getSingleArticleController } from "../controllers/ArticlesController.js";
+import { getArticlesController, getSingleArticleController } from "../controllers/ArticlesController.js";
 import { createMessagesController, getMessagesController } from "../controllers/MessagesController.js";
 
 
 const router = express.Router();
 
 // routes
-router.get("/get-articles", getArticlessController);
+router.get("/get-articles", getArticlesController);
 
 // single article
 router.get("/get-articles/:aid", getSingleArticleController);

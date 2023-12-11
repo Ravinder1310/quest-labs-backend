@@ -30,7 +30,6 @@ export const createMessagesController = async (req, res) => {
 export const getMessagesController = async (req, res) => {
   try {
     const messages = await MessagesModel.find({})
-      .sort({ createdAt: -1 });
     res.status(200).send({
       success: true,
       total: messages.length,

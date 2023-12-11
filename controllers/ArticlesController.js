@@ -6,7 +6,7 @@ dotenv.config();
 
 
 // get all articles controller
-export const getArticlessController = async (req, res) => {
+export const getArticlesController = async (req, res) => {
   try {
     const articles = await ArticlesModel.find({})
     res.status(200).send({

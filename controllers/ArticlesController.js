@@ -9,7 +9,6 @@ dotenv.config();
 export const getArticlessController = async (req, res) => {
   try {
     const articles = await ArticlesModel.find({})
-      .sort({ createdAt: -1 });
     res.status(200).send({
       success: true,
       total: articles.length,

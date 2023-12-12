@@ -2,10 +2,6 @@ import mongoose from "mongoose";
 
 
 const articlesSchema = new mongoose.Schema({
-    tabs:{
-        type:String,
-        required:true
-    },
     title:{
         type:String,
         required:true
@@ -14,6 +10,10 @@ const articlesSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    postedBy:{
+        type:String,
+        required:true
+    }
 
 },{timestamps:true})
 

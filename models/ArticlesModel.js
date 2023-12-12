@@ -2,10 +2,6 @@ import mongoose from "mongoose";
 
 
 const articlesSchema = new mongoose.Schema({
-    photo:{
-        type:String,
-        required:true
-    },
     tabs:{
         type:String,
         required:true

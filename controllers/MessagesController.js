@@ -7,7 +7,7 @@ dotenv.config();
 // create message controller
 export const createMessagesController = async (req, res) => {
   try {
-    const { message } = req.body;
+    // const { message } = req.body;
     
     const messages = new MessagesModel({ ...req.body});
     await messages.save();

@@ -15,6 +15,6 @@ router.get("/get-articles/:aid", getSingleArticleController);
 router.get("/get-messages", getMessagesController);
 
 // create messages
-router.delete("/create-messages", createMessagesController);
+router.post("/create-messages", createMessagesController);
 
 export default router;
